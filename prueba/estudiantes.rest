@@ -1,0 +1,38 @@
+GET http://127.0.0.1:5000/estudiantes
+
+###
+GET http://127.0.0.1:5000/estudiantes/:777
+
+###
+POST http://127.0.0.1:5000/estudiantes
+Accept: application/json
+Content-Type: application/json
+
+{
+"ci_e": "1010",
+"nombre_e": "carlos",
+"apell_pat_e": "perez",
+"apell_mat_e": "mendez",
+"procedencia_e": "pando"
+}
+
+
+###
+PUT http://127.0.0.1:5000/estudiantes/:1010
+Accept: application/json
+Content-Type: application/json
+
+{
+"nombre_e": "carlosssssssss",
+"apell_pat_e": "perez",
+"apell_mat_e": "mendez",
+"procedencia_e": "oruro"
+}
+
+###
+DELETE  http://127.0.0.1:5000/estudiantes/:1010
+
+###
+GET https://testinf530.000webhostapp.com/estudiantes2023
+Accept: application/json
+Content-Type: application/json
